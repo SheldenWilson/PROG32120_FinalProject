@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swilson4264.imdb1.SignUp">
+
+    <EditText
+        android:id="@+id/passwordTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/emailTxt"
+        android:layout_alignStart="@+id/emailTxt" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="153dp"
+        android:layout_above="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/imdb" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</android.widget.RelativeLayout>

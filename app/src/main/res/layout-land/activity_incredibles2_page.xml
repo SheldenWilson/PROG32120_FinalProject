@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swilson4264.imdb1.HomeScrean">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Label"
+        android:text="2004 | PG | 1h 55min | Animation, Action"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="homeScreen"
+        app:srcCompat="@drawable/imdbbtn" />
+
+
+    <TextView
+        android:id="@+id/Label"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton2"
+        android:text="The Incredibles"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world."
+        android:textSize="20sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/imageButton2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Label"
+        android:layout_marginEnd="245dp"
+        android:layout_marginRight="245dp"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/incredibles" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ ADD TO WATCHLIST"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+</android.widget.RelativeLayout>
+

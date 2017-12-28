@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swilson4264.imdb1.HomeScrean">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Label"
+        android:text="2017 | 14A | 2h 15min | Drama, Horror"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="homeScreen"
+        app:srcCompat="@drawable/imdbbtn" />
+
+
+    <TextView
+        android:id="@+id/Label"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton2"
+        android:text="IT"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="A group of bullied kids band together when a shapeshifting monster, taking the appearance of a clown, begins hunting children."
+        android:textSize="20sp"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/Label"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/itlogo"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView5"
+        android:text="+ ADD TO WATCHLIST"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+</android.widget.RelativeLayout>
+

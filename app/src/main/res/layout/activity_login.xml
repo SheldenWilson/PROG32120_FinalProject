@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swilson4264.imdb1.Login">
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/signUpBtn"
+        android:layout_alignLeft="@+id/signUpBtn"
+        android:layout_alignStart="@+id/signUpBtn"
+        android:layout_marginBottom="12dp"
+        android:onClick="onClick"
+        android:text="Sign In" />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/passwordTxt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/passwordTxt"
+        android:layout_marginBottom="38dp"
+        android:onClick="onClick"
+        android:text="Create Account" />
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signInBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="181dp"
+        app:srcCompat="@drawable/imdb" />
+
+    <EditText
+        android:id="@+id/emailTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordTxt"
+        android:layout_alignStart="@+id/passwordTxt"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/passwordTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+</android.widget.RelativeLayout>
+

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Imdb1</string>
+    <string name="title_activity_it_page">itPage</string>
+    <string name="title_activity_incredibles2_page">Incredibles2Page</string>
+    <string-array name="ageRating_array">
+        <item>G</item>
+        <item>PG</item>
+        <item>PG-13</item>
+        <item>R</item>
+        <item>NC-17</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.swilson4264.imdb1.MovieInfo">
+
+    <ScrollView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/descriptionsTxt"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6"
+        android:id="@+id/scrollView3"
+        android:layout_alignBottom="@+id/imageView6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/descriptionTxt"
+                android:layout_width="239dp"
+                android:layout_height="203dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="145dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/incredibles"
+        tools:layout_editor_absoluteX="-28dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:layout_below="@+id/descriptionsTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/descriptionsTxt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="2004 | PG | 1h 55min | Animation, Action"
+        android:textSize="20sp"
+        android:layout_below="@+id/nameTxt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="72dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="homeScreen"
+        app:srcCompat="@drawable/imdbbtn" />
+
+    <Button
+        android:id="@+id/addWatchBtn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/scrollView3"
+        android:text="+ ADD TO WATCHLIST"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+</android.widget.RelativeLayout>
