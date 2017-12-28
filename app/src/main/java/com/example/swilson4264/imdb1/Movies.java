@@ -18,7 +18,7 @@ public class Movies extends AppCompatActivity {
         setContentView(R.layout.activity_movies);
 
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
-                R.layout.activity_listview,mobileArray);
+                R.layout.activity_listview,R.id.Itemname,mobileArray);
         ListView listview = (ListView) findViewById(R.id.aListView);
         listview.setAdapter(adapter);
     }
