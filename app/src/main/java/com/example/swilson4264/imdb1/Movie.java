@@ -62,4 +62,6 @@ public class Movie {
        // this.mGenre = mGenre;
 
     }
+
+
 }
