@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +27,21 @@ public class Movies extends AppCompatActivity {
         List<Movie> movie = database.movieDao().getAllMovies();
 //        list.add(movie.get(0).mName);
         int a = movie.size();
+        if (a == 0) {
+
+            Intent intent = new Intent(this, AddMovie.class);
+            startActivity(intent);
+        }
+
+        if (a != 0 ){
+            int counters = 0;
+            for(int i=0; i<a; i++) {
+                list.add(movie.get(counters).mName.toString());
+                counters++;
+            }
+        }
+
+       // list.add(movie.get(0).mName);
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.activity_listview,R.id.Itemname,list);
         ListView listview = (ListView) findViewById(R.id.aListView);

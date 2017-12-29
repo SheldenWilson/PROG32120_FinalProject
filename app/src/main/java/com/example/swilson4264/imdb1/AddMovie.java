@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import java.util.List;
+
 
 public class AddMovie extends AppCompatActivity implements View.OnClickListener{
 
@@ -39,12 +41,14 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener{
 
     }
     public void onClick(View view){
-
+        List<Movie> movie = database.movieDao().getAllMovies();
+        int x = movie.size();
         String mName = mNameTxt.getText().toString();
         String mDescription = mDescriptionTxt.getText().toString();
-        database.movieDao().addMovie(new Movie(1,mNameTxt.getText().toString(),
+        int add = x + 1;
+        database.movieDao().addMovie(new Movie(add,mNameTxt.getText().toString(),
                 mDescriptionTxt.getText().toString()));
-        Intent intent = new Intent(this,MovieInfo.class);
+        Intent intent = new Intent(this,Movies.class);
         startActivity(intent);
     }
 }
