@@ -12,10 +12,9 @@
         android:id="@+id/mNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/mDescriptionTxt"
-        android:layout_alignLeft="@+id/descriptionLabel"
-        android:layout_alignStart="@+id/descriptionLabel"
-        android:layout_marginBottom="23dp"
+        android:layout_alignTop="@+id/mNameTxt"
+        android:layout_toLeftOf="@+id/mNameTxt"
+        android:layout_toStartOf="@+id/mNameTxt"
         android:layout_weight="1"
         android:text="Movie Name"
         android:textSize="20sp" />
@@ -24,190 +23,50 @@
         android:id="@+id/Label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_weight="1"
+        android:gravity="center"
         android:text="Add A Movie"
-        android:textSize="40sp"
-        android:gravity="center"/>
+        android:textSize="40sp" />
 
     <EditText
         android:id="@+id/mDescriptionTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/descriptionLabel"
+        android:layout_toEndOf="@+id/descriptionLabel"
+        android:layout_toRightOf="@+id/descriptionLabel"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_alignBottom="@+id/descriptionLabel"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/mNameTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/mDescriptionTxt"
+        android:layout_marginBottom="26dp"
+        android:layout_toEndOf="@+id/descriptionLabel"
+        android:layout_toRightOf="@+id/descriptionLabel"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_alignBottom="@+id/mNameLabel"
-        android:layout_toRightOf="@+id/descriptionLabel"
-        android:layout_toEndOf="@+id/descriptionLabel" />
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/descriptionLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Label"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="165dp"
         android:layout_weight="1"
         android:text="Description"
-        android:textSize="20sp"
-        android:layout_marginRight="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_above="@+id/ageRLabel"
-        android:layout_toLeftOf="@+id/mDescriptionTxt"
-        android:layout_toStartOf="@+id/mDescriptionTxt"
-        android:layout_marginBottom="47dp" />
-
-    <Spinner
-        android:id="@+id/aRatingSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:layout_alignTop="@+id/ageRLabel"
-        android:layout_toRightOf="@+id/descriptionLabel"
-        android:layout_toEndOf="@+id/descriptionLabel" />
-
-    <TextView
-        android:id="@+id/ageRLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Age Rating"
-        android:textSize="20sp"
-        android:layout_above="@+id/editText3"
-        android:layout_alignLeft="@+id/descriptionLabel"
-        android:layout_alignStart="@+id/descriptionLabel"
-        android:layout_marginBottom="24dp" />
-
-    <TextView
-        android:id="@+id/rdLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Release Date :"
-        android:textSize="20sp"
-        android:layout_alignBottom="@+id/editText3"
-        android:layout_alignLeft="@+id/ageRLabel"
-        android:layout_alignStart="@+id/ageRLabel" />
-
-    <TextView
-        android:id="@+id/genreLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Genre"
-        android:textSize="20sp"
-        android:layout_marginTop="59dp"
-        android:layout_below="@+id/editText3"
-        android:layout_alignLeft="@+id/rdLabel"
-        android:layout_alignStart="@+id/rdLabel" />
-
-    <ScrollView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:id="@+id/scrollView2"
-        android:layout_alignTop="@+id/genreLabel"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <CheckBox
-                android:id="@+id/actionCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Action" />
-
-            <CheckBox
-                android:id="@+id/adventureCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Adventure" />
-
-            <CheckBox
-                android:id="@+id/animationCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Animation" />
-
-            <CheckBox
-                android:id="@+id/comedyCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Comedy" />
-
-            <CheckBox
-                android:id="@+id/crimeCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Crime" />
-
-            <CheckBox
-                android:id="@+id/fantasyCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Fantasy" />
-
-            <CheckBox
-                android:id="@+id/horrorCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Horror" />
-
-            <CheckBox
-                android:id="@+id/mysteryCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mystery" />
-
-            <CheckBox
-                android:id="@+id/romanceCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Romance" />
-
-            <CheckBox
-                android:id="@+id/scifiCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sci-Fi" />
-
-            <CheckBox
-                android:id="@+id/thrillerCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thriller" />
-
-            <CheckBox
-                android:id="@+id/westernCBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Western" />
-        </LinearLayout>
-    </ScrollView>
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:ems="10"
-        android:inputType="date" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/saveMovieBtn"

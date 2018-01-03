@@ -18,7 +18,7 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener{
     private EditText mNameTxt;
     private EditText mDescriptionTxt;
     private AppDatabase database;
-    private Spinner aRatingSpinner;
+   // private Spinner aRatingSpinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +29,14 @@ public class AddMovie extends AppCompatActivity implements View.OnClickListener{
         mDescriptionTxt = (EditText) findViewById(R.id.mDescriptionTxt);
         database = AppDatabase.getDatabase(getApplicationContext());
 
-        aRatingSpinner =(Spinner)findViewById(R.id.aRatingSpinner);
+       // aRatingSpinner =(Spinner)findViewById(R.id.aRatingSpinner);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.ageRating_array, android.R.layout.simple_spinner_item);
+//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+//                R.array.ageRating_array, android.R.layout.simple_spinner_item);
+//
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        aRatingSpinner.setAdapter(adapter);
+      //  aRatingSpinner.setAdapter(adapter);
 
 
     }
